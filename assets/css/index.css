@@ -1,1 +1,99 @@
 @import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+    --main-color: #329bcd;
+    --sec-color: #cd6432;
+    --black: #101010;
+}
+
+html {
+    font-size: 100%;
+    color: var(--black);
+}
+
+/* body {
+    display: flex;
+} */
+
+body {
+    display: grid;
+    grid-template-rows: [header-row] 150px [nav-row] auto [content-row] auto [footer-row] auto;
+    grid-template-columns: [whitespace-left] 20% [main] 60% [whitespace-right] 20%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "whitespace-left main whitespace-right"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+    width: 8em;
+    /* background-color: var(--sec-color); */
+    border: white;
+    border-style: solid;
+}
+
+nav ul li a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header,
+nav {
+    background: var(--main-color);
+    color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    letter-spacing: 0.02em;
+}
+
+p,
+a {
+    font-family: "Open Sans", sans-serif;
+}
