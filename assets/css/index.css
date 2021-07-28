@@ -10,6 +10,8 @@
 html {
     font-size: 100%;
     color: var(--black);
+    position: absolute;
+    width: 100%;
 }
 
 /* body {
@@ -18,7 +20,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: [header-row] 150px [nav-row] auto [content-row] auto [footer-row] auto;
+    grid-template-rows: [header-row] 15em [nav-row] auto [content-row] auto [footer-row] auto;
     grid-template-columns: [whitespace-left] 20% [main] 60% [whitespace-right] 20%;
     grid-template-areas:
         "header header header"
@@ -31,6 +33,28 @@ header {
     grid-area: header;
 }
 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: var(--main-color);
+    height: 15em;
+}
+
+.hero-text {
+    color: white;
+    margin: 0;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 5px var(--black);
+}
+
 nav {
     grid-area: nav;
 }
@@ -41,35 +65,32 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     text-align: center;
     width: 8em;
-    /* background-color: var(--sec-color); */
-    border: white;
+    background-color: var(--main-color);
+    border: var(--black);
     border-style: solid;
+    border-width: 1px;
 }
 
 nav ul li a {
     display: inline-block;
     position: relative;
-    z-index: 1;
     width: 100%;
     height: 100%;
-    padding: 0.5em;
+    padding: 0.5em 0em;
     color: white;
+    font-weight: 700;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-header,
-nav {
-    background: var(--main-color);
-    color: white;
 }
 
 main {
@@ -78,6 +99,10 @@ main {
 
 footer {
     grid-area: footer;
+}
+
+img {
+    max-width: 100vw;
 }
 
 h1,
