@@ -93,6 +93,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+nav ul li a.active {
+    text-decoration: underline;
+}
+
 main {
     grid-area: main;
 }
@@ -122,3 +126,8 @@ p,
 a {
     font-family: "Open Sans", sans-serif;
 }
+
+/* .date {
+    color: gray;
+    font-weight: 400;
+} */
