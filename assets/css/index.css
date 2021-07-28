@@ -107,6 +107,21 @@ main {
 
 footer {
     grid-area: footer;
+    width: 100%;
+    text-align: center;
+    background-color: var(--sec-color);
+}
+
+footer p {
+    margin-top: 2em;
+    color: white;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 2em;
+    color: white;
+    text-decoration: none;
 }
 
 section, article {
