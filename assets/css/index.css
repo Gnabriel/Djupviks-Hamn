@@ -52,7 +52,7 @@ header {
     text-shadow: 1px 1px 5px var(--black);
 }
 
-.hero-text h1 {
+.hero-text > h1 {
     padding-top: 0;
 }
 
@@ -85,7 +85,7 @@ nav ul li a {
     width: 100%;
     height: 100%;
     padding: 0.5em 0em;
-    color: white;
+    color: var(--black);
     font-weight: 700;
     text-decoration: none;
 }
@@ -106,19 +106,18 @@ footer {
     grid-area: footer;
     width: 100%;
     text-align: center;
-    background-color: var(--sec-color);
+    border-top: 5px solid var(--sec-color);
     margin-top: 2em;
 }
 
 footer p {
     margin-top: 2em;
-    color: white;
 }
 
 footer a {
     display: block;
     margin-bottom: 2em;
-    color: white;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -150,7 +149,7 @@ th {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
-    color: white;
+    color: var(--black);
     background-color: var(--sec-color);
 }
 
@@ -164,7 +163,6 @@ th {
 #contact-form legend {
     padding: 0em 0.5em;
     font-weight: 700;
-    color: var(--sec-color);
 }
 
 #contact-form label {
