@@ -198,6 +198,18 @@ th {
 	background:linear-gradient(to bottom, #54afda 5%, var(--main-color) 100%);
 }
 
+#weather {
+    margin: 2em;
+    padding: 0.5em;
+    background-color: rgb(222, 244, 252);
+    border: 5px solid var(--main-color);
+    text-align: center;
+}
+
+#weather > p {
+    font-weight: 700;
+}
+
 h1,
 h2,
 h3,
