@@ -154,6 +154,50 @@ th {
     background-color: var(--sec-color);
 }
 
+#contact-form fieldset {
+    margin: 1.5em 0em;
+    padding: 1em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+#contact-form legend {
+    padding: 0em 0.5em;
+    font-weight: 700;
+    color: var(--sec-color);
+}
+
+#contact-form label {
+    display: block;
+    margin: 0.5em 0em;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="tel"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    max-width: 30em;
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type=submit] {
+	background-color: var(--main-color);
+	border: 1px solid lightgray;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+    font-weight: 700;
+	padding: 10px 30px;
+}
+
+#contact-form input[type=submit]:hover {
+	background:linear-gradient(to bottom, #54afda 5%, var(--main-color) 100%);
+}
+
 h1,
 h2,
 h3,

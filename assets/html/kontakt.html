@@ -49,49 +49,39 @@
                 <form id="contact-form">
                     <fieldset>
                         <legend>Skicka ett meddelande till oss</legend>
-                        <br />
                         <label for="heading">Rubrik:</label>
                         <input type="text" id="heading" name="heading" />
-                        <br /><br />
                         <label for="msg">Meddelande:</label>
                         <textarea
                             rows="10"
-                            cols="50"
+                            cols="80"
                             id="msg"
                             name="msg"
                         ></textarea>
-                        <br /><br />
                     </fieldset>
 
                     <fieldset>
                         <legend>Dina uppgifter</legend>
-                        <br />
                         <label for="name">Namn:</label>
                         <input type="text" id="name" name="name" />
-                        <br /><br />
                         <label for="phone">Telefon:</label>
                         <input type="tel" id="phone" name="phone" />
-                        <br /><br />
                         <label for="mail">Mail:</label>
                         <input type="email" id="mail" name="mail" />
-                        <br /><br />
                     </fieldset>
 
                     <fieldset>
                         <legend>Vad gäller ärendet?</legend>
-                        <br />
                         <label for="subject">Välj ämne:</label>
                         <select id="subject" name="subject">
                             <option value="batplats">Båtplats</option>
                             <option value="medlem">Medlem</option>
                             <option value="ovrigt">Övrigt</option>
                         </select>
-                        <br /><br />
                     </fieldset>
 
                     <fieldset>
                         <legend>Vill du bli kontaktad?</legend>
-                        <br />
                         <input
                             type="radio"
                             id="contact-type-mail"
@@ -99,7 +89,6 @@
                             value="Mail"
                         />
                         <label for="contact-type-mail">Ja, via mail</label>
-                        <br /><br />
                         <input
                             type="radio"
                             id="contact-type-phone"
@@ -107,7 +96,6 @@
                             value="Telefon"
                         />
                         <label for="contact-type-phone">Ja, via telefon</label>
-                        <br /><br />
                         <input
                             type="radio"
                             id="contact-type-none"
@@ -115,7 +103,6 @@
                             value="Nej"
                         />
                         <label for="contact-type-none">Nej</label>
-                        <br /><br />
                     </fieldset>
 
                     <input type="submit" value="Skicka" />
