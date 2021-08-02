@@ -128,6 +128,8 @@ article {
 
 img {
     padding: 1em 0em;
+    max-width: 100%;
+    height: auto;
 }
 
 figure {
@@ -185,18 +187,18 @@ th {
     box-sizing: border-box;
 }
 
-#contact-form input[type=submit] {
-	background-color: var(--main-color);
-	border: 1px solid lightgray;
-	display: inline-block;
-	cursor: pointer;
-	color: white;
+#contact-form input[type="submit"] {
+    background-color: var(--main-color);
+    border: 1px solid lightgray;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
     font-weight: 700;
-	padding: 10px 30px;
+    padding: 10px 30px;
 }
 
-#contact-form input[type=submit]:hover {
-	background:linear-gradient(to bottom, #54afda 5%, var(--main-color) 100%);
+#contact-form input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #54afda 5%, var(--main-color) 100%);
 }
 
 #weather {
